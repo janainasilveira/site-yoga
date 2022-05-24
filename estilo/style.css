@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+:root {
+    --cor0:#CB5561;
+    --cor1:#FFC000;
+    --cor2:#6F5C5F;
+    --cor3:#FFFFFF;
+    --cor4:#C96500;
+    --cor5:#000000;
+
+    --fonte-padrao: Verdana, Arial, Helvetica, sans-serif;
+    --fonte-destaque: serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    line-height: 200%;
+    background-color: var(--cor2);
+}
+
+/*header {
+   /*background-image: linear-gradient(to bottom, var(--cor1), var(--cor0), var(--cor2));*/
+   /*background-image: url('imagens/bg_pordosol_amerolorosado1.webp');
+   background-size: 300px 300px;
+   background-repeat: no-repeat;
+   /*width: 100%;
+   min-height: 30px;
+   margin: 0px;
+   padding: 5px 0px 30px 0px;
+}*/
+
+nav {
+    background-color: #857477;
+    width: 100%;
+    height: 45px;
+    padding: 10px 10px 3px 0px; /*o lateral direito não está funcionando*/
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.315);
+    overflow: hidden;
+    position: fixed;
+}
+
+nav > a {
+    color:white;
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    font-weight:bold;
+    display: block;
+    float: right;
+    padding: 13px 16px;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor0);
+    padding-bottom: 3px;
+    border-radius: 2px;
+    transition-duration: 0.3s;
+}
+
+main {
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 60px;
+    background-color: #FFFFFF;
+    padding: 60px 30px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.315);
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.normal > h1 > a {
+    color: var(--cor0);
+}
+
+section.estampa {
+    background-color: var(--cor0);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#citacao_home {
+    background-image: url('../imagens/bg_pordosol_amarelorosado1.1.png');
+    background-position: center;
+    text-align: center;
+    font-size: 1.3em;
+    font-style: italic;
+    padding: 40px 0px 40px 0px;
+}
+
+section#fundoaulas {
+    background-image: url('../imagens/bg_pordosol_amarelorosado1.1.png');
+}
+
+section.estampa > p {
+    display: inline-block;
+    padding: 50px;
+    text-shadow: rgba(111, 92, 95, 0.5) 0.4px 0.2px 0.5px;
+}
+
+section.estampa > h1 {
+    color: white;
+    padding: 30px;
+}
+
+section.estampa > h1 > a {
+    color: white;
+}
+
+main h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.3em;
+    color: var(--cor0);
+    padding: 40px 0px;
+}
+
+main h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    text-decoration: underline #FFC000;
+    color: var(--cor2);
+    padding: 30px 0px 20px 0px;
+}
+
+main h2 > a {
+    text-decoration: underline #FFC000;
+    color: var(--cor2);
+}
+
+main h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: var(--cor1);
+    text-shadow: rgba(111, 92, 95, 0.5) 0.4px 0.2px 0.5px;
+    padding: 7px 0px 13px 0px;
+}
+
+#detalhe {
+    padding: 7px 0px 13px 40px;
+}
+
+aside {
+    padding: 0px 40px;
+}
+
+main p {
+    padding: 0px 0px 13px 0px;
+    line-height: 2 em;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+figcaption {
+    font-size: 0.7em;
+    font-style: italic;
+    color: #6F5C5F;
+    padding: 2px;
+    text-align: center;
+}
+
+figcaption a {
+    color: #6F5C5F;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}
+
+main img.media {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main img.grande {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+main img.icone {
+    max-width: 24px;
+    display: inline-block;
+    align-content: left;
+    padding: 10px 10px 0px 0px;
+}
+
+picture {
+    align-content: center;
+}
+
+
+#fotosobreDW {
+    display: inline-block;
+    width: 30%;
+    /*text-align: center;*/
+    align-items: middle;
+    margin-bottom: 40px;
+}
+
+#fotohome {
+    display: block;
+    margin: auto
+}
+
+#fotoQH {
+    max-width: 650px;
+    display: block;
+    margin: auto;
+}
+
+#sobrelogo {
+    max-width: 150px;
+    display: inline-box;
+    float: left;
+    padding: 10px 30px 0px 0px;
+}
+
+#contatologo {
+    max-width: 150px;
+    display: inline-box;
+    float: right;
+}
+
+footer {
+    background-color: #857477;
+    width: 100%;
+    color: var(--cor3);
+    text-align: center;
+    font-size: 0.8em;
+    margin: 30px 0px 0px 0px;
+}
