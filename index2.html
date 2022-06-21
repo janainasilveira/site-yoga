@@ -12,7 +12,86 @@
         #homelogo {
             float: left;
             padding: 50px 0px 0px 30px;
-            max-width: 50px;
+            max-width: 200px;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2.3em;
+            color: #CB5561;
+            padding: 40px 0px 20px 0px;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6em;
+            text-decoration: underline #FFC000;
+            color: #6F5C5F;
+            padding: 30px 0px 20px 0px;
+        }
+
+        h2 > a {
+            text-decoration: underline #FFC000;
+            color: #6F5C5F;
+        }
+
+        h3 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            color: #FFC000;
+            text-shadow: rgba(111, 92, 95, 0.5) 0.4px 0.2px 0.5px;
+            padding: 7px 0px 13px 0px;
+        }
+
+        p {
+            padding: 0px 0px 13px 0px;
+            line-height: 2 em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #CB5561;
+            font-weight: bold;
+        }
+
+        section.normal {
+            max-width: 100%;
+            background-color: #FFFFFF;
+            padding: 20px 50px;
+        }
+
+        section.normal > h1 > a {
+            color: #CB5561;
+        }
+
+        section.estampa {
+            background-color: #CB5561;
+            color: white;
+            max-width: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        section.estampa > h1 {
+            padding: 50px 50px 20px 50px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        img.grande {
+            max-width: 85%;
+            display: block;
+            margin: auto;
+        }
+
+        img.icone {
+            max-width: 24px;
+            display: inline-block;
+            align-content: left;
+            padding: 10px 10px 0px 0px;
         }
 
         #contato > p > a {
@@ -28,12 +107,13 @@
         <a href="contato.html">Contato</a>
         <a href="aulas.html">Aulas</a>
         <a href="sobre.html">Sobre</a>
-        <a href="index.html">Home</a>
+        <a href="index2.html">Home</a>
     </nav>
     <header>
         <section class="estampa" id="citacao_home">
             <picture id="homelogo">
-                <img src="imagens/logo_ciyrio-grande.png" class="pequena" alt="Logo Centro de Iyengar Yoga Rio - por Deborah Weinberg">
+                <source media="(max-width: 500px)" srcset="imagens/logo_ciyrio" type="image/png">
+                <img src="imagens/logo_ciyrio-grande.png" alt="Logo Centro de Iyengar Yoga Rio - por Deborah Weinberg">
             </picture>
             <p>
                 "Yoga não apenas transforma como uma pessoa vê as coisas,<br>
@@ -44,14 +124,16 @@
         </section>
     </header>
 
-    <main>       
-        <section class="normal">
+    <div>       
+        <section class="estampa">
             <picture id="fotohome">
                 <!--<img src="imagens/fotomontagem_deborah_home.png" class="media" alt="Fotomontagem Deborah Weinberg em três diferentes asanas">-->
-                <img src="imagens/experimentacao.jpeg" class="grande" alt="experimentacao">
+                <img src="imagens/experimentacao.png" alt="experimentacao">
             </picture>
         </section>
+    </div>
 
+    <div>
         <section class="normal">
             <h1><a href="sobre.html">Sobre</a></h1>
                 <h2><a href="sobre.html">O Centro de Iyengar Yoga Rio</a></h2>
@@ -68,29 +150,35 @@
                     <a href="sobre.html">Saiba mais</a>
                 </p>
         </section>
+    </div>
 
+    <div>
         <section class="normal">
             <picture>
-                <img src="imagens/ilustracao_daniel_studio_deborah.png" alt="Arte do querido aluno Daniel Gnattali. A ilustração mostra uma série de possibilidades lúdicas, utilizando os acessórios de yoga, para a execução dos asanas.">
+                <img src="imagens/ilustracao_daniel_studio_deborah.png" class="grande" alt="Arte do querido aluno Daniel Gnattali. A ilustração mostra uma série de possibilidades lúdicas, utilizando os acessórios de yoga, para a execução dos asanas.">
                 <figcaption>Arte de <a href="https://www.instagram.com/danielgnattali" target="_blank">Daniel Gnattali</a></figcaption>
             </picture>
         </section>
+    </div>
 
+    <div>
         <section class="estampa" id="fundoaulas">
             <h1><a href="aulas.html">Aulas</a></h1>
                 <picture><a href="aulas.html"></a>
                     <source media="(max-widht: 300px" src="imagens/Infoaulashome-vertical.png" type="image/png">
-                    <img src="imagens/infoaulashome.png" alt="Info Aulas: Online e Particulares; Turmas e Particulares">
+                    <img src="imagens/infoaulashome.png" class="grande" alt="Info Aulas: Online e Particulares; Turmas e Particulares">
                 </picture></a>
         </section>
-
+    </div>
+    <div>
         <section class="normal">
             <h2>Quadro de Horários</h2>
             <picture id="fotoQH">
                 <img src="imagens/quadrohorarios.png" alt="Quadro de Horários">
             </picture>
         </section>
-
+    </div>
+    <div>
         <section class="normal">
             <h1 id="contato">Contato</h1>
                 <p>
@@ -107,8 +195,7 @@
                     <img src="imagens/icone-pin-localizacao.png" class="icone" alt="Ícone Pin Localização">Itaipava, Petrópolis - RJ
                 </p>
         </section>
-
-    </main>
+    </div>
 
     <footer>
         <p>© 2022 Centro de Iyengar Yoga Rio</p>
